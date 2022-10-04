@@ -685,22 +685,14 @@ input[type="range"]:active::-webkit-slider-thumb{
     max-width: 1200px;
     margin: 0 auto;
     margin-bottom: 32px;
-    margin-top: 75px;
 }
 .main {
     position: relative;
-}
-.main::after {
-    content: "";
-    background: url(../img/elements2.png);
-    background-size: contain;
+    padding-top: 75px;
+    background: url(../img/Subtract.png);
     background-repeat: no-repeat;
-    width: 395px;
-    height: 300px;
-    position: absolute;
-    top: 75px;
-    right: 0;
-    z-index: -1;
+    background-position: left top;
+    background-size: auto;
 }
 .cardContainerBlock {
     display: flex;
@@ -710,7 +702,7 @@ input[type="range"]:active::-webkit-slider-thumb{
 }
 .card {
     width: 23%;
-    height: 385px;
+    height: auto;
     background: #FFFFFF;
     border-radius: 10px;
     padding: 25px 16px 43px 16px;
@@ -731,7 +723,7 @@ input[type="range"]:active::-webkit-slider-thumb{
     font-weight: 800;
     font-size: 15px;
     line-height: 17px;
-    color: #8267F6;
+    color: #57C533;
     margin: 15px 0 25px 0;
     padding: 0 19px;
     min-height: 60px;
@@ -778,9 +770,32 @@ input[type="range"]:active::-webkit-slider-thumb{
     text-transform: uppercase;
     color: #FFFFFF;
     padding: 10px 0;
-    background: #3DAE2B;
-    border-radius: 30px;
+    background: #57C533;
     border: none;
+}
+.infoBtnClas {
+    display: block;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    font-family: 'Manrope', sans-serif;
+    color: #FFFFFF;
+    padding: 10px 100px;
+    background: #57C533;
+    width: max-content;
+    margin: 0 auto 80px auto;
+    text-decoration: none;
+}
+.infoBtn {
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    font-family: 'Manrope', sans-serif;
+    color: #FFFFFF;
+    padding: 10px 100px;
+    background: #57C533;
 }
 .infoContainer {
     max-width: 1200px;
@@ -1056,6 +1071,14 @@ h4 {
     right: 0;
     top: 0;
 }
+h6 {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    font-size: 90px;
+    line-height: 92px;
+    color: #303030;
+    margin-bottom: 60px;
+}
 @media (min-width: 1440px) {
 .header {
     padding: 0 135px;
@@ -1075,8 +1098,20 @@ h4 {
     height: max-content;
     padding: 23px 35px;
 }
+.cardContainerBlock {
+    max-width: 90%;
+    width: 100%;
+    margin: 0 auto;
+}
+.card  {
+    width: 300px;
+}
 .calcBackground {
 z-index: -1;
+}
+.infoContainer {
+    width: 90%;
+    margin: 0 auto;
 }
 .navigationHeader {
     width: 100%;
@@ -1345,6 +1380,26 @@ h4 {
 }
 .footerLinkIcon a {
     margin-right: 5px;
+}
+.infoContainerLeft,
+.infoContainerCenter,
+.infoContainerRight {
+    width: 100%;
+}
+.infoContainerLeft,
+.infoContainerCenter {
+    margin-bottom: 20px;
+}
+.cardContainerBlock {
+    justify-content: center;
+}
+.infoBtnClas {
+    padding: 10px 50px;
+}
+h6 {
+    font-size: 42px;
+    line-height: 46px;
+    padding-left: 5%;
 }
 }
 @media (max-width: 300px) {
