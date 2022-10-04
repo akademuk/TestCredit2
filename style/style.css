@@ -1242,10 +1242,25 @@ h3 {
 .footerTopRight {
     width: 100%;
 }
+.buttonHeader button a {
+    display: flex;
+}
+.cardContainerBlock {
+    justify-content: center;
+}
+h6 {
+    text-align: center;
+}
 }
 @media(max-width: 576px) {
 .rangeSliderTittle p {
     font-size: 20px;
+}
+.buttonHeader button:nth-of-type(1) {
+    padding: 5px !important;
+}
+.buttonHeader button a {
+    font-size: 9px;
 }
 .timeCredit {
     display: block;
@@ -1419,6 +1434,9 @@ h6 {
 }
 @media (max-width: 300px) {
     .buttonHeader button:nth-of-type(1) {
+        display: none;
+    }
+    .buttonHeader button a {
         display: none;
     }
 .menu.open-menu {
