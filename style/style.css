@@ -1083,10 +1083,20 @@ h6 {
 }
 .linkBtn {
     color: #fff !important;
-    width: 100%;
     text-align: center;
-    margin-right: 0 !important;
     text-decoration: none;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -0.01em;
+    padding: 5px 11px;
+    color: #FFFFFF;
+    background: #57C533;
+    border: none;
+    margin-right: 15px;
+    height: 35px;
+    padding: 5px 10px !important;
 }
 .linkBtn::before {
     content: none !important;
@@ -1192,10 +1202,10 @@ z-index: -1;
 .navigationHeader {
     display: none;
 }
-.buttonHeader a {
+.buttonHeader a:nth-of-type(1) {
     display: none;
 }
-.buttonHeader button:nth-of-type(2) {
+.buttonHeader button:nth-of-type(1) {
     display: none;
 }
 .flexContainer {
@@ -1255,6 +1265,9 @@ h6 {
 @media(max-width: 576px) {
 .rangeSliderTittle p {
     font-size: 20px;
+}
+.buttonHeader a {
+    font-size: 10px;
 }
 .buttonHeader button:nth-of-type(1) {
     padding: 5px !important;
@@ -1458,6 +1471,9 @@ h2 {
 }
 .calcResultProcent p {
     font-size: 12px !important;
+}
+.buttonHeader a {
+    display: none;
 }
 }
 @media (max-width: 350px) {
