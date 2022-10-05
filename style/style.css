@@ -53,6 +53,9 @@ body {
     width: 240px;
     color: red;
 }
+.errorName, .errorTel {
+    font-size: 12px;
+}
 .logotype a{
     display: flex;
     text-decoration: none;

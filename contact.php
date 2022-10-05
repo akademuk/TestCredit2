@@ -12,12 +12,12 @@ $error = '';
 
 if(!$name)
 {
-$error .= '<div class="errorName">Вкажіть своє ім`я</div>';
+$error .= '<div class="errorName">Укажите свое имя</div>';
 }
 
 if(!$tel)
 {
-$error .= '<div class="errorTel">Вкажіть свій діючий номер</div>';
+$error .= '<div class="errorTel">Укажите свой действующий номер</div>';
 }
 
 
@@ -26,12 +26,12 @@ if(!$error)
 {
 
 $to      = 'golofaev73@gmail.com';
-$subject = 'Письмо с сайта Green Groshi';
+$subject = 'Письмо с сайта Test Credit';
 // текст письма
 $message = '
 <html>
 <head>
-  <title>Письмо с сайта Tobi Groshi</title>
+  <title>Письмо с сайта Test Credit</title>
 </head>
 <style>
 table, th, td {
