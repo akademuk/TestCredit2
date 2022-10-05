@@ -110,19 +110,20 @@
                         <p>Выбери сумму</p>
                         <div id="innerMoney">0</div>
                     </div>
-                    <input type="range" id="valueMoney" min="600" max="20000" value="0" step="100" oninput="rangeMoney()">
+                    <input type="range" id="valueMoney" name="sum" min="600" max="20000" value="0" step="100" oninput="rangeMoney()">
                </div>
                <div class="sliderDate">
                 <div class="sliderContainerText">
                     <p>Виберить термiн</p>
                     <div id="innerDate">0</div>
                 </div>
-                    <input type="range" id="valueDate" min="0" max="30" value="0" oninput="rangeMoney()">
+                    <input type="range" id="valueDate" name="srok" min="0" max="30" value="0" oninput="rangeMoney()">
                 </div>
             </div>
-            <form class="rangeForm" id="ajax-contact-form">
-                <input type="text" placeholder="|  Имя / Фамилия">
-                <input id="phone" type="tel" pattern="(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?" placeholder="+38(999) 999-99-99">
+            <form class="rangeForm" id="offer-form" name="offer-form">
+                <div id="note"></div>
+                <input type="text" placeholder="|  Имя / Фамилия" name="your-name">
+                <input id="phone" name="your-tel" type="tel" pattern="(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?" placeholder="+38(999) 999-99-99">
                 <input type="submit" value="Получить деньги" class="calcResultBtn">
             </form>
             <div class="calcResult">
@@ -263,6 +264,7 @@
     <script src="script/range-slider.js"></script>
     <script src="script/closeBurger.js"></script>
     <script src="script/popup.js"></script>
+    <script src="script/contactform.js"></script>
     <script>
         $(function(){
             $("#phone").mask("+38(999) 999-99-99");
