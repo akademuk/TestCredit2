@@ -25,8 +25,7 @@ $error .= '<div class="errorTel">Вкажіть свій діючий номер
 if(!$error)
 {
 
-  // golofaev73@gmail.com
-$to      = 'akademuk24@gamil.com';
+$to      = 'golofaev73@gmail.com';
 $subject = 'Письмо с сайта Green Groshi';
 // текст письма
 $message = '
@@ -34,6 +33,17 @@ $message = '
 <head>
   <title>Письмо с сайта Tobi Groshi</title>
 </head>
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+tr td:nth-of-type(1) {
+    width: 100px;
+}
+tr td:nth-of-type(2) {
+    width: 200px;
+}
+</style>
 <body>
   <table>
     <tr>

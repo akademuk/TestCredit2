@@ -38,6 +38,21 @@ body {
     background: #F0F0F0;
     overflow: visible;
 }
+#note {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 100%;
+}
+.notification_error {
+    display: flex;
+    justify-content: space-between;
+}
+.errorName,
+.errorTel {
+    width: 240px;
+    color: red;
+}
 .logotype a{
     display: flex;
     text-decoration: none;
@@ -431,6 +446,7 @@ input[type="range"]:active::-webkit-slider-thumb{
     justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: 42px;
+    position: relative;
 }
 .rangeForm input {
     background: #FFFFFF;
@@ -1299,7 +1315,11 @@ h6 {
     width: 100%;
 }
 .rangeForm input:nth-of-type(1) {
-    margin-bottom: 11px;
+    margin-bottom: 25px;
+}
+.errorTel {
+    position: absolute;
+    top: 63px;
 }
 #innerMoney, 
 #innerDate {
@@ -1454,6 +1474,12 @@ h6 {
     }
 .menu.open-menu {
     padding: 20px;
+}
+.errorName, .errorTel {
+    font-size: 10px;
+}
+#note {
+    top: -12px;
 }
 .rangeSliderTittle p {
     font-size: 14px;
