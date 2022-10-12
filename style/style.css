@@ -459,6 +459,11 @@ input[type="range"]:active::-webkit-slider-thumb{
     padding-left: 20px;
     width: 240px;
     border: 1px solid #949494;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;  
+    color: #303030;
 }
 .rangeForm input:nth-of-type(1)::placeholder {
     font-family: 'Manrope', sans-serif;
@@ -468,6 +473,13 @@ input[type="range"]:active::-webkit-slider-thumb{
     color: #303030;
 }
 .rangeForm input:nth-of-type(2)::placeholder {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #D1D1D1;
+}
+.rangeForm input:nth-of-type(2) {
     font-family: 'Manrope', sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -495,7 +507,7 @@ input[type="range"]:active::-webkit-slider-thumb{
     line-height: 19px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: #FFFFFF !important;
     padding: 9px;
     background: #57C533 !important;
     border: none;
@@ -520,7 +532,7 @@ input[type="range"]:active::-webkit-slider-thumb{
     left: 0;
 }
 #valueMoney::after {
-    content: "20 000 KZT";
+    content: "200 000 KZT";
     font-family: 'Manrope', sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -707,7 +719,7 @@ input[type="range"]:active::-webkit-slider-thumb{
 }
 .main {
     position: relative;
-    padding-top: 75px;
+    padding-top: 35px;
     background: url(../img/Subtract.png);
     background-repeat: no-repeat;
     background-position: left top;
@@ -952,21 +964,16 @@ h5 {
     letter-spacing: -0.01em;
     padding: 5px 11px;
 }
+
 .buttonHeader button:nth-of-type(1) {
-    color: #FFFFFF;
-    background: #57C533;
-    border: none;
-    margin-right: 15px;
-    height: 35px;
-    padding: 5px 10px !important;
-}
-.buttonHeader button:nth-of-type(2) {
     color: #57C533;
     border:1px solid #57C533;
     background: transparent;
+    font-size: 15px;
 }
 .rangeSliderTittle {
-    width: 570px;
+    width: 100%;
+    text-align: center;
 }
 .rangeSliderTittle p {
     font-size: 28px;
@@ -1095,10 +1102,10 @@ h4 {
 h6 {
     font-family: 'Manrope', sans-serif;
     font-weight: 600;
-    font-size: 90px;
-    line-height: 92px;
+    font-size: 60px;
+    line-height: 60px;
     color: #303030;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 .linkBtn {
     color: #fff !important;
@@ -1120,14 +1127,6 @@ h6 {
 .linkBtn::before {
     content: none !important;
 }
-.buttonHeader button:nth-of-type(1) {
-    font-size: 9px;
-    padding: 5px;
-    margin-right: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 @media (min-width: 1440px) {
 .header {
     padding: 0 135px;
@@ -1146,6 +1145,9 @@ h6 {
 .header {
     height: max-content;
     padding: 23px 35px;
+}
+h6 {
+    text-align: center;
 }
 .cardContainerBlock {
     max-width: 90%;
@@ -1211,6 +1213,14 @@ z-index: -1;
 }
 .footerContainer {
     flex-direction: row;
+}
+.rangeSliderTittle {
+    width: 90%;
+}
+.rangeSliderTittle span {
+    display: block;
+    width: max-content;
+    margin: 0 auto;
 }
 }
 @media(max-width: 768px) {
@@ -1286,7 +1296,7 @@ h6 {
     font-size: 20px;
 }
 .buttonHeader a {
-    font-size: 10px;
+    font-size: 16px;
 }
 .buttonHeader button:nth-of-type(1) {
     padding: 5px !important;
@@ -1526,4 +1536,9 @@ h2 {
     top: -210%;
     left: 0px;
 }
+}
+@media (max-width: 390px) {
+    .buttonHeader a {
+        font-size: 10px;
+    }
 }

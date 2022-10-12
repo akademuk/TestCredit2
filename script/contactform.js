@@ -2,7 +2,6 @@ jQuery(document).ready(function ($) {
 
     $("#offer-form").submit(function () {
         var str = $(this).serialize();
-
         $.ajax({
             type: "POST",
             url: "contact.php",

@@ -101,7 +101,7 @@
     <div class="rangeSlider" id="rangeSlider">
         <img src="img/calcBackground.png" alt="calcBackground" class="calcBackground">
         <div class="rangeSliderTittle">
-            <p>Получи первый кредит<br>под 0.01%<span> до 20 000 тенге, </span><span class="timeCredit">за 11 минут</span></p>
+            <p>Получи первый кредит под 0.01%<span> до 200 000 тенге, </span><span class="timeCredit">за 11 минут</span></p>
         </div>
         <div class="rangeSliderRight" id="fields">
             <div class="rangeSliderRightContainer">
@@ -110,7 +110,7 @@
                         <p>Выбери сумму</p>
                         <div id="innerMoney">0</div>
                     </div>
-                    <input type="range" id="valueMoney" name="sum" min="600" max="20000" value="0" step="100" oninput="rangeMoney()">
+                    <input type="range" id="valueMoney" name="sum" min="600" max="200000" value="0" step="100" oninput="rangeMoney()">
                </div>
                <div class="sliderDate">
                 <div class="sliderContainerText">
@@ -123,7 +123,7 @@
             <form class="rangeForm" id="offer-form" name="offer-form">
                 <div id="note"></div>
                 <input type="text" placeholder="|  Имя / Фамилия" name="your-name">
-                <input id="phone" name="your-tel" type="tel" pattern="(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?" placeholder="+38(999) 999-99-99">
+                <input id="phone" name="your-tel" type="tel" pattern="(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?" placeholder="+7 (666) 666-66-66">
                 <input type="submit" value="Получить деньги" class="calcResultBtn">
             </form>
             <div class="calcResult">
@@ -133,11 +133,11 @@
                 </div>
                 <div class="calcResultProcent">
                     <p>Процент</p>
-                    <p id="resultPercent"></p>
+                    <p id="resultPercent" name="percent"></p>
                 </div>
                 <div class="calcResultProcent">
                     <p>Отдаешь</p>
-                    <p id="resultCalc"></p>
+                    <p id="resultCalc" name="sumPercent"></p>
                 </div>
             </div>
             <a href="#" class="linkCredit open-popup">Уcловия кредитования</a>
@@ -267,7 +267,7 @@
     <script src="script/contactform.js"></script>
     <script>
         $(function(){
-            $("#phone").mask("+38(999) 999-99-99");
+            $("#phone").mask("+7(999) 999-99-99");
             });
     </script>
 </body>

@@ -8,6 +8,8 @@ $name = htmlspecialchars($_POST['your-name']);
 $tel = $_POST['your-tel'];
 $summ = $_POST['sum'];
 $srok = $_POST['srok'];
+$percent = $_POST['percent'];
+$sumPercent = $_POST['sumPercent'];
 $error = '';
 
 if(!$name)
@@ -59,9 +61,17 @@ tr td:nth-of-type(2) {
       <td>'. $summ .'</td>
     </tr>
     <tr>
-      <td>Строк</td>
+      <td>Срок</td>
       <td>'. $srok .'</td>
     </tr>
+    <tr>
+      <td>Процент</td>
+      <td>'. $percent .'</td>
+    </tr>
+    <tr>
+    <td>Общаяя сумма с процентом</td>
+    <td>'. $sumPercent .'</td>
+  </tr>
   </table>
 </body>
 </html>
