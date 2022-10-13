@@ -104,42 +104,44 @@
             <p>Получи первый кредит под 0.01%<span> до 200 000 тенге, </span><span class="timeCredit">за 11 минут</span></p>
         </div>
         <div class="rangeSliderRight" id="fields">
-            <div class="rangeSliderRightContainer">
-               <div class="sliderMoney">
-                    <div class="sliderContainerText">
-                        <p>Выбери сумму</p>
-                        <div id="innerMoney">0</div>
+            <form id="offer-form" name="offer-form">
+                <div class="rangeSliderRightContainer">
+                    <div class="sliderMoney">
+                         <div class="sliderContainerText">
+                             <p>Выбери сумму</p>
+                             <div id="innerMoney">0</div>
+                         </div>
+                         <input type="range" id="valueMoney" name="sum" min="600" max="200000" value="0" step="100" oninput="rangeMoney()">
                     </div>
-                    <input type="range" id="valueMoney" name="sum" min="600" max="200000" value="0" step="100" oninput="rangeMoney()">
-               </div>
-               <div class="sliderDate">
-                <div class="sliderContainerText">
-                    <p>Виберить термiн</p>
-                    <div id="innerDate">0</div>
-                </div>
-                    <input type="range" id="valueDate" name="srok" min="0" max="30" value="0" oninput="rangeMoney()">
-                </div>
-            </div>
-            <form class="rangeForm" id="offer-form" name="offer-form">
-                <div id="note"></div>
-                <input type="text" placeholder="|  Имя / Фамилия" name="your-name">
-                <input id="phone" name="your-tel" type="tel" pattern="(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?" placeholder="+7 (666) 666-66-66">
-                <input type="submit" value="Получить деньги" class="calcResultBtn">
+                    <div class="sliderDate">
+                     <div class="sliderContainerText">
+                         <p>Виберить термiн</p>
+                         <div id="innerDate">0</div>
+                     </div>
+                         <input type="range" id="valueDate" name="srok" min="0" max="30" value="0" oninput="rangeMoney()">
+                     </div>
+                    </div>
+                 <div class="rangeForm">
+                     <div id="note"></div>
+                     <input type="text" placeholder="|  Имя / Фамилия" name="your-name">
+                     <input id="phone" name="your-tel" type="tel" pattern="(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?" placeholder="+7 (666) 666-66-66">
+                     <input type="submit" value="Получить деньги" class="calcResultBtn">
+                 </div>
+                 <div class="calcResult">
+                     <div class="calcResultProcent">
+                         <p>Берешь</p>
+                         <p id="innerMoneyCalc"></p>
+                     </div>
+                     <div class="calcResultProcent">
+                         <p>Процент</p>
+                         <p id="resultPercent" name="percent"></p>
+                     </div>
+                     <div class="calcResultProcent">
+                         <p>Отдаешь</p>
+                         <p id="resultCalc" name="sumPercent"></p>
+                     </div>
+                 </div>
             </form>
-            <div class="calcResult">
-                <div class="calcResultProcent">
-                    <p>Берешь</p>
-                    <p id="innerMoneyCalc"></p>
-                </div>
-                <div class="calcResultProcent">
-                    <p>Процент</p>
-                    <p id="resultPercent" name="percent"></p>
-                </div>
-                <div class="calcResultProcent">
-                    <p>Отдаешь</p>
-                    <p id="resultCalc" name="sumPercent"></p>
-                </div>
-            </div>
             <a href="#" class="linkCredit open-popup">Уcловия кредитования</a>
         </div>
     </div>

@@ -50,7 +50,7 @@ tr td:nth-of-type(2) {
   <table>
     <tr>
       <td>Имя</td>
-      <td>'. $name .'</td>
+      <td>'. $name .' </td>
     </tr>
     <tr>
       <td>Телефон</td>
@@ -64,14 +64,6 @@ tr td:nth-of-type(2) {
       <td>Срок</td>
       <td>'. $srok .'</td>
     </tr>
-    <tr>
-      <td>Процент</td>
-      <td>'. $percent .'</td>
-    </tr>
-    <tr>
-    <td>Общаяя сумма с процентом</td>
-    <td>'. $sumPercent .'</td>
-  </tr>
   </table>
 </body>
 </html>
